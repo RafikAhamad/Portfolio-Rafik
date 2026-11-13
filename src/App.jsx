@@ -1,4 +1,4 @@
-
+import profilePic from "./assets/profile.jpg";
 import './App.css'
 
 function App() {
@@ -18,29 +18,51 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="hero" id="home">
-        <p className="intro">HELLO, I'M</p>
+     
+{/* Hero Section */}
+<section className="hero" id="home">
 
-        <h1>Rafik Shaik</h1>
+  <div className="hero-content">
+    <p className="intro">HELLO, I'M</p>
 
-        <h2>Frontend Developer</h2>
+    <h1>
+      Rafik <span>Shaik</span>
+    </h1>
 
-        <p className="hero-description">
-          I build modern, responsive and user-friendly
-          web applications using React.js and JavaScript.
-        </p>
+    <h2>Frontend Developer</h2>
 
-        <div className="hero-buttons">
-          <a href="#projects" className="btn primary-btn">
-            View My Work
-          </a>
+    <p className="hero-description">
+      I build modern, responsive and user-friendly
+      web applications using React.js and JavaScript.
+      Passionate about creating seamless digital experiences
+      and exploring full-stack technologies.
+    </p>
 
-          <a href="#contact" className="btn secondary-btn">
-            Contact Me
-          </a>
-        </div>
-      </section>
+    <div className="hero-buttons">
+      <a href="#projects" className="btn primary-btn">
+        View My Work
+      </a>
+
+      <a href="#contact" className="btn secondary-btn">
+        Contact Me
+      </a>
+    </div>
+  </div>
+
+  <div className="hero-image">
+    <div className="profile-glow">
+      <img
+        src={profilePic}
+        alt="Rafik Shaik - Frontend Developer"
+      />
+    </div>
+    <div className="hero-image-label">
+      <span></span> Available for opportunities
+    </div>
+  </div>
+
+</section>
+
 
       {/* Temporary section placeholders */}
       
